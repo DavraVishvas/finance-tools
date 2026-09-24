@@ -1,0 +1,15 @@
+{
+    "redirects": [
+        {
+            "source": "/:path*",
+            "has": [
+                {
+                    "type": "host",
+                    "value": "www.pdfimageconvert.com"
+                }
+            ],
+            "destination": "https://pdfimageconvert.com/:path*",
+            "permanent": true
+        }
+    ]
+}
