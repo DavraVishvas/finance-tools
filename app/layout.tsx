@@ -100,11 +100,8 @@ const jsonLd = {
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import { ThemeProvider } from "next-themes";
-import Script from "next/script";
 
 import { Toaster } from "react-hot-toast";
-import GlobalScrollAd from "@/app/components/GlobalScrollAd";
-import ToolToastAd from "@/app/components/ToolToastAd";
 
 export default function RootLayout({
   children,
@@ -148,8 +145,6 @@ export default function RootLayout({
             }}
           />
           <ScrollToTop />
-          <GlobalScrollAd />
-          <ToolToastAd />
         </ThemeProvider>
       </body>
     </html >

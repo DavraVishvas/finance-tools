@@ -134,17 +134,11 @@ export default function EMICalculator() {
                 suppressHydrationWarning
             />
             <div className="w-full max-w-[1600px] mx-auto flex flex-col xl:flex-row justify-center items-start gap-8 px-4 relative">
-                {/* Left Ads (Sticky) */}
+
                 <div className="hidden xl:flex flex-col w-[300px] shrink-0 sticky top-24 gap-6">
-                    <div className="w-[300px] min-h-[250px] flex items-center justify-center relative">
-                        <iframe src="/ad1.html" width="300" height="250" style={{ border: 'none', overflow: 'hidden' }} scrolling="no" title="Advertisement" />
-                    </div>
-                    <div className="w-[300px] min-h-[250px] flex items-center justify-center relative">
-                        <iframe src="/ad2.html" width="300" height="250" style={{ border: 'none', overflow: 'hidden' }} scrolling="no" title="Advertisement" />
-                    </div>
-                    <div className="w-[300px] min-h-[250px] flex items-center justify-center relative">
-                        <iframe src="/ad1.html" width="300" height="250" style={{ border: 'none', overflow: 'hidden' }} scrolling="no" title="Advertisement" />
-                    </div>
+
+
+
                 </div>
 
                 {/* Main Content */}
@@ -330,17 +324,11 @@ export default function EMICalculator() {
 
                 </div>
 
-                {/* Right Ads (Sticky) */}
+
                 <div className="hidden xl:flex flex-col w-[300px] shrink-0 sticky top-24 gap-6">
-                    <div className="w-[300px] min-h-[250px] flex items-center justify-center relative">
-                        <iframe src="/ad2.html" width="300" height="250" style={{ border: 'none', overflow: 'hidden' }} scrolling="no" title="Advertisement" />
-                    </div>
-                    <div className="w-[300px] min-h-[250px] flex items-center justify-center relative">
-                        <iframe src="/ad1.html" width="300" height="250" style={{ border: 'none', overflow: 'hidden' }} scrolling="no" title="Advertisement" />
-                    </div>
-                    <div className="w-[300px] min-h-[250px] flex items-center justify-center relative">
-                        <iframe src="/ad2.html" width="300" height="250" style={{ border: 'none', overflow: 'hidden' }} scrolling="no" title="Advertisement" />
-                    </div>
+
+
+
                 </div>
             </div>
         </>

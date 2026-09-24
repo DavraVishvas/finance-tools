@@ -20,15 +20,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
 
     return (
         <div className="mx-auto w-full max-w-[1600px] px-4 py-8 sm:px-6 sm:py-12 lg:px-8 flex-1 flex flex-col xl:flex-row gap-8 items-start justify-center">
-            {/* Left Side Ads */}
-            <aside className="hidden xl:flex w-[300px] shrink-0 flex-col gap-8 sticky top-24">
-                <div className="w-[300px] h-[250px] bg-zinc-100 dark:bg-zinc-800/50 rounded-xl overflow-hidden shadow-sm border border-zinc-200 dark:border-zinc-800 relative">
-                    <iframe src="/ad1.html" width="100%" height="100%" style={{ border: "none" }} title="Advertisement" scrolling="no" className="absolute inset-0" />
-                </div>
-                <div className="w-[300px] h-[250px] bg-zinc-100 dark:bg-zinc-800/50 rounded-xl overflow-hidden shadow-sm border border-zinc-200 dark:border-zinc-800 relative">
-                    <iframe src="/ad1.html" width="100%" height="100%" style={{ border: "none" }} title="Advertisement" scrolling="no" className="absolute inset-0" />
-                </div>
-            </aside>
+
 
             {/* Main Article Content */}
             <div className="flex-1 w-full max-w-4xl flex flex-col min-w-0">
@@ -61,13 +53,6 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                 </article>
             </div>
 
-            {/* Right Side Ads */}
-            <aside className="hidden xl:flex w-[300px] shrink-0 flex-col justify-end sticky top-24 h-[calc(100vh-8rem)] pb-4">
-                {/* Bottom Right Ad */}
-                <div className="w-[300px] h-[250px] bg-zinc-100 dark:bg-zinc-800/50 rounded-xl overflow-hidden shadow-sm border border-zinc-200 dark:border-zinc-800 relative">
-                    <iframe src="/ad1.html" width="100%" height="100%" style={{ border: "none" }} title="Advertisement" scrolling="no" className="absolute inset-0" />
-                </div>
-            </aside>
         </div>
     );
 }
