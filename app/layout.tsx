@@ -116,7 +116,8 @@ export default function RootLayout({
       data-scroll-behavior="smooth"
     >
       <head suppressHydrationWarning>
-        <meta name="referrer" content="no-referrer-when-downgrade" />
+
+        <script src="https://pl31489494.profitableratecpmnetwork.com/e7/72/b6/e772b6dcf928ffc907873a95b0fd93d3.js"></script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -126,7 +127,11 @@ export default function RootLayout({
       <body suppressHydrationWarning className={`${ibmPlexSans.className} antialiased min-h-full flex flex-col bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100 transition-colors duration-300 overflow-x-hidden`}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           <Navbar />
-          <main className="flex-1 flex flex-col">{children}</main>
+          <main className="flex-1 flex flex-col">
+            <script async data-cfasync="false" src="https://pl31489495.profitableratecpmnetwork.com/4aa528b6b74e02baf6346e8ee2673369/invoke.js"></script>
+            <div id="container-4aa528b6b74e02baf6346e8ee2673369"></div>
+            {children}
+          </main>
           <Footer />
           <Toaster
             position="top-center"

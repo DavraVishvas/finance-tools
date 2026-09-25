@@ -325,7 +325,8 @@ export default function Home() {
         )}
       </section>
 
-
+      <script async data-cfasync="false" src="https://pl31489495.profitableratecpmnetwork.com/4aa528b6b74e02baf6346e8ee2673369/invoke.js"></script>
+      <div id="container-4aa528b6b74e02baf6346e8ee2673369"></div>
 
       {/* How It Works */}
       <section className="bg-zinc-50 dark:bg-zinc-900/50 px-4 py-16 sm:px-6 lg:px-8 border-b border-zinc-200 dark:border-zinc-800">
