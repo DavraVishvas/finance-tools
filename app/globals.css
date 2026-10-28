@@ -23,11 +23,38 @@
 
 html {
   scroll-behavior: smooth;
+  max-width: 100vw;
+  overflow-x: clip;
 }
 
 body {
+  max-width: 100vw;
+  overflow-x: clip;
+  position: relative;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ensure Adsterra banners and containers never overflow the viewport */
+#container-4aa528b6b74e02baf6346e8ee2673369,
+[id^="container-"] {
+  max-width: 100% !important;
+  width: 100% !important;
+  overflow: hidden !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  box-sizing: border-box !important;
+}
+
+#container-4aa528b6b74e02baf6346e8ee2673369 iframe,
+[id^="container-"] iframe,
+#container-4aa528b6b74e02baf6346e8ee2673369 > div,
+[id^="container-"] > div {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
 }
 
 button {
@@ -40,7 +67,6 @@ button {
 }
 
 @keyframes pulse-soft {
-
   0%,
   100% {
     opacity: 1;

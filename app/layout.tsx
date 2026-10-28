@@ -111,12 +111,11 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className="h-full antialiased"
+      className="h-full antialiased max-w-full overflow-x-clip"
       suppressHydrationWarning
       data-scroll-behavior="smooth"
     >
       <head suppressHydrationWarning>
-
         <script src="https://pl31489494.profitableratecpmnetwork.com/e7/72/b6/e772b6dcf928ffc907873a95b0fd93d3.js"></script>
         <script
           type="application/ld+json"
@@ -124,12 +123,14 @@ export default function RootLayout({
           suppressHydrationWarning
         />
       </head>
-      <body suppressHydrationWarning className={`${ibmPlexSans.className} antialiased min-h-full flex flex-col bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100 transition-colors duration-300 overflow-x-hidden`}>
+      <body suppressHydrationWarning className={`${ibmPlexSans.className} antialiased min-h-full flex flex-col bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100 transition-colors duration-300 w-full max-w-full overflow-x-clip`}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           <Navbar />
-          <main className="flex-1 flex flex-col">
-            <script async data-cfasync="false" src="https://pl31489495.profitableratecpmnetwork.com/4aa528b6b74e02baf6346e8ee2673369/invoke.js"></script>
-            <div id="container-4aa528b6b74e02baf6346e8ee2673369"></div>
+          <main className="flex-1 flex flex-col w-full max-w-full overflow-x-clip">
+            <div className="w-full max-w-full overflow-hidden flex justify-center py-2 px-2">
+              <script async data-cfasync="false" src="https://pl31489495.profitableratecpmnetwork.com/4aa528b6b74e02baf6346e8ee2673369/invoke.js"></script>
+              <div id="container-4aa528b6b74e02baf6346e8ee2673369" className="w-full max-w-full overflow-hidden flex justify-center"></div>
+            </div>
             {children}
           </main>
           <Footer />
