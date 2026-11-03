@@ -41,7 +41,7 @@ export default function Navbar() {
                 {/* Logo */}
                 <div className="flex flex-1 justify-start">
                     <Link href="/" className="flex items-center gap-2 group flex-shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded-lg">
-                        <div className="flex h-20 w-52 items-center justify-start transition-transform group-hover:scale-105">
+                        <div className="flex h-20 w-40 sm:w-52 items-center justify-start transition-transform group-hover:scale-105">
                             <img src="/logo.png" alt="Finance Tools Logo - Financial Tools" className="h-full w-full object-contain" />
                         </div>
                     </Link>

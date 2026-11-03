@@ -148,8 +148,8 @@ export default function Home() {
             </div>
 
             {/* Right Column: Visual Composition */}
-            <div className="relative h-[300px] sm:h-[350px] w-full mt-4 lg:mt-0 flex items-center justify-center">
-              <div className="relative w-[500px] h-[350px] scale-[0.65] sm:scale-75 md:scale-90 lg:scale-100 origin-center">
+            <div className="relative h-[300px] sm:h-[350px] w-full max-w-full mt-4 lg:mt-0 flex items-center justify-center overflow-hidden">
+              <div className="relative w-[340px] sm:w-[500px] h-[350px] scale-[0.8] sm:scale-75 md:scale-90 lg:scale-100 origin-center">
                 {/* Main Card */}
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-80 bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-400 dark:border-zinc-800 shadow-2xl dark:shadow-none z-10 flex flex-col items-center justify-center p-6 transform -rotate-6 hover:rotate-0 transition-transform duration-500">
                   <Calculate className="h-24 w-24 text-blue-500 mb-6" />
@@ -325,8 +325,10 @@ export default function Home() {
         )}
       </section>
 
-      <script async data-cfasync="false" src="https://pl31489495.profitableratecpmnetwork.com/4aa528b6b74e02baf6346e8ee2673369/invoke.js"></script>
-      <div id="container-4aa528b6b74e02baf6346e8ee2673369"></div>
+      <div className="w-full max-w-full overflow-hidden flex justify-center py-4 px-2">
+        <script async data-cfasync="false" src="https://pl31489495.profitableratecpmnetwork.com/4aa528b6b74e02baf6346e8ee2673369/invoke.js"></script>
+        <div id="container-4aa528b6b74e02baf6346e8ee2673369" className="w-full max-w-full overflow-hidden flex justify-center"></div>
+      </div>
 
       {/* How It Works */}
       <section className="bg-zinc-50 dark:bg-zinc-900/50 px-4 py-16 sm:px-6 lg:px-8 border-b border-zinc-200 dark:border-zinc-800">
@@ -374,7 +376,7 @@ export default function Home() {
       </section>
 
       {/* FAQ Section */}
-      <section className="bg-white dark:bg-zinc-950 py-16 sm:py-24 border-t border-zinc-200 dark:border-zinc-800">
+      <section className="bg-white dark:bg-zinc-950 py-16 sm:py-24 border-t border-zinc-200 dark:border-zinc-800 overflow-hidden">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <div className="mb-10 flex items-center justify-between border-b border-zinc-200 dark:border-zinc-800 pb-4">
             <h3 className="text-2xl font-semibold text-zinc-900 dark:text-white m-0">
@@ -401,7 +403,7 @@ export default function Home() {
           </div>
 
           <div
-            className="relative h-[380px] w-full flex items-center justify-center py-4 cursor-grab active:cursor-grabbing select-none"
+            className="relative h-[380px] w-full max-w-full flex items-center justify-center py-4 cursor-grab active:cursor-grabbing select-none overflow-hidden"
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
@@ -439,16 +441,16 @@ export default function Home() {
               const diff = (idx - faqIndex + 6) % 6;
               let positionClass = "";
               if (diff === 0) positionClass = "z-30 translate-x-0 scale-100 opacity-100";
-              else if (diff === 1) positionClass = "z-20 translate-x-[40%] scale-90 opacity-100 brightness-75";
-              else if (diff === 5) positionClass = "z-20 -translate-x-[40%] scale-90 opacity-100 brightness-75";
-              else if (diff === 2) positionClass = "z-10 translate-x-[70%] scale-75 opacity-100 brightness-50";
-              else if (diff === 4) positionClass = "z-10 -translate-x-[70%] scale-75 opacity-100 brightness-50";
-              else positionClass = "z-0 translate-x-0 scale-50 opacity-0";
+              else if (diff === 1) positionClass = "z-20 translate-x-[35%] sm:translate-x-[40%] scale-90 opacity-100 brightness-75";
+              else if (diff === 5) positionClass = "z-20 -translate-x-[35%] sm:-translate-x-[40%] scale-90 opacity-100 brightness-75";
+              else if (diff === 2) positionClass = "z-10 translate-x-[60%] sm:translate-x-[70%] scale-75 opacity-100 brightness-50 hidden sm:block";
+              else if (diff === 4) positionClass = "z-10 -translate-x-[60%] sm:-translate-x-[70%] scale-75 opacity-100 brightness-50 hidden sm:block";
+              else positionClass = "z-0 translate-x-0 scale-50 opacity-0 hidden";
 
               return (
                 <div
                   key={idx}
-                  className={`absolute w-full max-w-lg rounded-3xl bg-white p-8 sm:p-10 shadow-2xl transition-all duration-500 border border-zinc-200 dark:border-zinc-800 dark:bg-zinc-900 ${positionClass}`}
+                  className={`absolute w-[90%] sm:max-w-lg rounded-3xl bg-white p-6 sm:p-10 shadow-2xl transition-all duration-500 border border-zinc-200 dark:border-zinc-800 dark:bg-zinc-900 ${positionClass}`}
                 >
                   <h4 className="text-xl sm:text-2xl font-bold text-zinc-900 dark:text-white mb-6">
                     {faq.q}
